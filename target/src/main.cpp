@@ -37,7 +37,7 @@ std::optional<int> input(char name) {
   return value;
 }
 
-std::optional<int> sum(int a, int b) noexcept {
+__declspec(noinline) std::optional<int> sum(int a, int b) noexcept {
   constexpr int min = std::numeric_limits<int>::min();
   constexpr int max = std::numeric_limits<int>::max();
 

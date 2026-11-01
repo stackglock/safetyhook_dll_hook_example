@@ -8,6 +8,10 @@ target_sources(${PROJECT_NAME} PRIVATE
   src/main.cpp
 )
 
+target_link_libraries(${PROJECT_NAME} PRIVATE
+  safetyhook
+)
+
 set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_STANDARD 23
     CXX_STANDARD_REQUIRED ON
